@@ -22,45 +22,42 @@ This pandoc filter will add attributes to code blocks based on its class.
 
 For example, it can be very useful to use different styles for different language in `listings` :
 
-```markdown
+	---
+	header-includes: |
+		\usepackage{listings}
+		
+		\lstset{ % General settings
+			numbers=left,
+			numberstyle=\tiny
+		}
 
----
-header-includes: |
-	\usepackage{listings}
-	
-	\lstset{ % General settings
-		numbers=left,
-		numberstyle=\tiny
+		\lstdefinestyle{cpp}{ % Only for C++
+			emphstyle=\color{Green}
+		}
+
+		\lstdefinestyle{python}{ % Only for Python
+			emphstyle=\color{Magenta}
+		}
+	---
+
+	C++:
+
+	```cpp
+	int main(int argc, char *argv[])
+	{
+		return 0;
 	}
+	```
 
-	\lstdefinestyle{cpp}{ % Only for C++
-		emphstyle=\color{Green}
-	}
+	Python:
 
-	\lstdefinestyle{python}{ % Only for Python
-		emphstyle=\color{Magenta}
-	}
----
+	```python
+	def main():
+		print('Hello')
 
-C++:
-
-~~~cpp
-int main(int argc, char *argv[])
-{
-	return 0;
-}
-~~~
-
-Python:
-
-~~~python
-def main():
-	print('Hello')
-
-if __name__ == '__main__':
-	main()
-~~~
-```
+	if __name__ == '__main__':
+		main()
+	```
 
 Then compile the example (`--listings` is needed only for this example):
 
