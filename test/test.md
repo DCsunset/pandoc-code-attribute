@@ -1,6 +1,7 @@
 ---
 header-includes: |
 	\usepackage{listings}
+	\usepackage[usenames,dvipsnames]{color}
 	
 	\lstset{ % General settings
 		numbers=left,
@@ -8,29 +9,29 @@ header-includes: |
 	}
 
 	\lstdefinestyle{cpp}{ % Only for C++
-		emphstyle=\color{Green}
+		keywordstyle=\color{Green}
 	}
 
 	\lstdefinestyle{python}{ % Only for Python
-		emphstyle=\color{Magenta}
+		keywordstyle=\color{Magenta}
 	}
 ---
 
 C++:
 
-~~~cpp
+```cpp
 int main(int argc, char *argv[])
 {
 	return 0;
 }
-~~~
+```
 
 Python:
 
-~~~python
+```python
 def main():
 	print('Hello')
 
 if __name__ == '__main__':
 	main()
-~~~
+```

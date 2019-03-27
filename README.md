@@ -25,6 +25,7 @@ For example, it can be very useful to use different styles for different languag
 	---
 	header-includes: |
 		\usepackage{listings}
+		\usepackage[usenames,dvipsnames]{color}
 		
 		\lstset{ % General settings
 			numbers=left,
@@ -32,11 +33,11 @@ For example, it can be very useful to use different styles for different languag
 		}
 
 		\lstdefinestyle{cpp}{ % Only for C++
-			emphstyle=\color{Green}
+			keywordstyle=\color{Green}
 		}
 
 		\lstdefinestyle{python}{ % Only for Python
-			emphstyle=\color{Magenta}
+			keywordstyle=\color{Magenta}
 		}
 	---
 
@@ -64,6 +65,10 @@ Then compile the example (`--listings` is needed only for this example):
 ```
 pandoc input.md --filter pandoc-code-attribute --listings -o output.pdf
 ```
+
+Results:
+
+<img src="result.png" width="50%" height="50%" />
 
 
 ### Command
