@@ -13,7 +13,7 @@ long_description = pypandoc.convert(readme, 'rst')
 setup(
     name='pandoc-code-attribute',
     version=version,
-    description='Pandoc filter to add attributes to code blocks based on its class',
+    description='Pandoc filter to add attributes to code blocks based on their classes',
     long_description=long_description,
     author='DCsunset',
     author_email='DCsunset@protonmail.com',

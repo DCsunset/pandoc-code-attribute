@@ -1,6 +1,6 @@
 # pandoc-code-attribute
 
-Pandoc filter to add attributes to code blocks based on its class.
+Pandoc filter to add attributes to code blocks based on their classes.
 
 
 ## Installation
@@ -18,7 +18,7 @@ pip3 install --user pandoc-code-attribute
 
 ### Example
 
-This pandoc filter will add attributes to code blocks based on its class.
+This pandoc filter will add attributes to code blocks based on their classes.
 
 For example, it can be very useful to use different styles for different language in `listings` :
 
