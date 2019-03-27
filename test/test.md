@@ -1,13 +1,36 @@
-# Test
+---
+header-includes: |
+	\usepackage{listings}
+	
+	\lstset{ % General settings
+		numbers=left,
+		numberstyle=\tiny
+	}
 
-## Test 1
+	\lstdefinestyle{cpp}{ % Only for C++
+		emphstyle=\color{Green}
+	}
 
-This is a C++ code block:
+	\lstdefinestyle{python}{ % Only for Python
+		emphstyle=\color{Magenta}
+	}
+---
 
-```cpp
-int main()
+C++:
+
+~~~cpp
+int main(int argc, char *argv[])
 {
 	return 0;
 }
-```
+~~~
 
+Python:
+
+~~~python
+def main():
+	print('Hello')
+
+if __name__ == '__main__':
+	main()
+~~~
