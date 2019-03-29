@@ -1,4 +1,7 @@
 ---
+code-attribute:
+	- cpp
+	- python
 header-includes: |
 	\usepackage{listings}
 	\usepackage[usenames,dvipsnames]{color}
@@ -35,3 +38,11 @@ def main():
 if __name__ == '__main__':
 	main()
 ```
+
+Others:
+
+```
+for i in list
+	do something
+```
+
