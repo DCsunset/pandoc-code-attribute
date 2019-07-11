@@ -5,7 +5,7 @@ Add attribute to code blocks
 import panflute as pf
 
 def action(elem, doc):
-    if isinstance(elem, pf.CodeBlock):
+    if isinstance(elem, pf.CodeBlock) or isinstance(elem, pf.Code):
         # Check whether emtpy
         if elem.classes: 
             config = doc.get_metadata('code-attribute')

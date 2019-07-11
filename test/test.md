@@ -20,7 +20,11 @@ header-includes: |
 	}
 ---
 
-C++:
+## C++:
+
+* Inline: `int a = 0`{.cpp}.
+
+* Block:
 
 ```cpp
 int main(int argc, char *argv[])
@@ -29,7 +33,11 @@ int main(int argc, char *argv[])
 }
 ```
 
-Python:
+## Python
+
+* Inline: `print('Yes')`{.python}.
+
+* Block:
 
 ```python
 def main():
